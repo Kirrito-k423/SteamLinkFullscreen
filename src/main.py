@@ -58,7 +58,7 @@ def setPositionSize(x,y,height,width,reName):
     # win32gui.SetWindowPos(QQwin, win32con.HWND_TOPMOST, 100,
     #                     100, 600, 600, win32con.SWP_SHOWWINDOW)
 def calculateXY():
-    scale=max(ipadResolutionRatioX/DisplayX,ipadResolutionRatioY/DisplayY)
+    scale=max(ipadResolutionRatioX/(DisplayX-fixOffset),ipadResolutionRatioY/(DisplayY-fixOffset))
     return [int(ipadResolutionRatioX/scale),int(ipadResolutionRatioY/scale)]
 
 if __name__ == "__main__":

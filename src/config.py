@@ -9,3 +9,5 @@ positionsY=0
 
 DisplayX=2560
 DisplayY=1440
+
+fixOffset=100
